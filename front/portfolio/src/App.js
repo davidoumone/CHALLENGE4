@@ -1,30 +1,16 @@
 import React from "react";
-import {Switch, Route, Link} from 'react-router-dom';
+import {Switch, Route} from 'react-router-dom';
 import "./App.css";
 import PageHome from "./components/PageHome/PageHome";
 import PageReact from "./components/PageReact/PageReact";
 import PageNode from "./components/PageNode/PageNode";
 import PageContact from "./components/PageContact/PageContact";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/react">React</Link>
-          </li>
-          <li>
-            <Link to="/node">Node</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav>
+      <Navbar/>
 
       <Switch>
         <Route exact path="/" component={PageHome} />

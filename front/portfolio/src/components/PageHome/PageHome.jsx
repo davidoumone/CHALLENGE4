@@ -1,10 +1,17 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import "./PageHome.css";
 
 const PageHome = () => {
   return (
     <div>
-      <Grid container column justify="center" alignItems="center">
+      <Grid
+        container
+        column
+        justify="center"
+        alignItems="center"
+        className="PageContainerHome"
+      >
         <Grid item xs={15}>
           <h1>introduction a la programmation</h1>
         </Grid>
@@ -51,6 +58,12 @@ const PageHome = () => {
         </Grid>
         <Grid item xs={15}>
           <h2>Bon voyage !</h2>
+        </Grid>
+        <Grid item xs={12}>
+          <img
+            alt=""
+            src="https://media0.giphy.com/media/l0MYSryDg63YEmXVS/200w.webp?cid=ecf05e47tfsk0av9iaroh9f1pgmdcdlr62mblmmfauo5pz2e&rid=200w.webp"
+          />
         </Grid>
       </Grid>
     </div>

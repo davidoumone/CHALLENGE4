@@ -1,3 +1,13 @@
+.App{
+    background-color: #ffff99;
+    background-size: 100%;
+}
 
+.App h1 {
+    color: green;
+}
 
+.App h2 {
+    color: blue;
+}
 
