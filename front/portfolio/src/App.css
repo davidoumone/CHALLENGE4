@@ -5,9 +5,11 @@
 
 .App h1 {
     color: green;
+    font-family: 'Kaushan Script', cursive;
 }
 
 .App h2 {
     color: blue;
+    font-family: 'Kaushan Script', cursive;
 }
 

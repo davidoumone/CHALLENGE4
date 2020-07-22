@@ -68,11 +68,40 @@ const PageReact = () => {
             faire son travail, et après un certain temps, cela se terminera et
             vous montrera quelques commandes. Enchainez avex ces deux autre
             commandes: cd my-app et ensuite npm start. Cela démarrera un serveur
-            de développement et ouvrira un navigateur Web pour vous
+            de développement et ouvrira un navigateur Web pour vous.
+          </p>
+        </Grid>
+        <Grid item xs={12}>
+          <p>
+            Voici quelques projets réalisé au cours de ma formation pour vous montrer plus en détails les pratiques de react.
           </p>
         </Grid>
         <Grid item xs={12}>
           <h2>Projet hérodex</h2>
+        </Grid>
+
+        <Grid item xs={5}>
+          <Carousel />
+        </Grid>
+
+        <Grid item xs={5}>
+          <Description />
+        </Grid>
+
+        <Grid item xs={12}>
+          <h2>Dé-pression</h2>
+        </Grid>
+
+        <Grid item xs={5}>
+          <Carousel />
+        </Grid>
+
+        <Grid item xs={5}>
+          <Description />
+        </Grid>
+
+        <Grid item xs={12}>
+          <h2>Mairie de Saintigny</h2>
         </Grid>
 
         <Grid item xs={5}>
