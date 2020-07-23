@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Grid } from "@material-ui/core";
 import Carousel from "./Carousel";
 import Description from "./Description";
 
 const PageReact = () => {
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+  const [carousels, setCarousels] = useState([]);
+  const [descriptions, setDescriptions] = useState(undefined);
+
+  useEffect(() => {
+    fetch(`${API_BASE_URL}/api/media/search/carouselherodex`)
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        setCarousels(data);
+        fetch(`${API_BASE_URL}/api/description/1`)
+          .then((res) => res.json())
+          .then((desc) => {
+            setDescriptions(desc);
+          })
+          .catch((error) => console.error(error.message));
+      })
+      .catch((error) => console.error(error.message));
+  }, [API_BASE_URL]);
+
   return (
     <div>
       <Grid
@@ -73,7 +93,8 @@ const PageReact = () => {
         </Grid>
         <Grid item xs={12}>
           <p>
-            Voici quelques projets réalisé au cours de ma formation pour vous montrer plus en détails les pratiques de react.
+            Voici quelques projets réalisé au cours de ma formation pour vous
+            montrer plus en détails les pratiques de react.
           </p>
         </Grid>
         <Grid item xs={12}>
@@ -81,11 +102,13 @@ const PageReact = () => {
         </Grid>
 
         <Grid item xs={5}>
-          <Carousel />
+          {carousels.length > 0 && <Carousel media={carousels} />}
         </Grid>
 
         <Grid item xs={5}>
-          <Description />
+          {descriptions && (
+            <Description description={descriptions} />
+          )}
         </Grid>
 
         <Grid item xs={12}>
@@ -93,11 +116,11 @@ const PageReact = () => {
         </Grid>
 
         <Grid item xs={5}>
-          <Carousel />
+          {/* <Carousel /> */}
         </Grid>
 
         <Grid item xs={5}>
-          <Description />
+          {/* <Description /> */}
         </Grid>
 
         <Grid item xs={12}>
@@ -105,11 +128,11 @@ const PageReact = () => {
         </Grid>
 
         <Grid item xs={5}>
-          <Carousel />
+          {/* <Carousel /> */}
         </Grid>
 
         <Grid item xs={5}>
-          <Description />
+          {/* <Description /> */}
         </Grid>
       </Grid>
     </div>

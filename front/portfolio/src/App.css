@@ -1,15 +1,20 @@
-.App{
-    background-color: #ffff99;
-    background-size: 100%;
+.App {
+  background-color: #ffff99;
+  background-size: 100%;
 }
 
 .App h1 {
-    color: green;
-    font-family: 'Kaushan Script', cursive;
+  color: green;
+  font-family: "Kaushan Script", cursive;
+  font-size: 3.5em;
 }
 
 .App h2 {
-    color: blue;
-    font-family: 'Kaushan Script', cursive;
+  color: blue;
+  font-family: "Kaushan Script", cursive;
+  font-size: 3.5em;
 }
 
+.App p {
+  font-size: 1.3em;
+}

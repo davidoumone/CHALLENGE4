@@ -1,24 +1,30 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 
-const Description = () => {
+const Description = ({ description }) => {
+  console.log("desc: ", description)
   return (
     <div>
-        <Grid container column justify="center" alignItems="space-between"></Grid>
-      <Grid item xs={12}>
-        <h1>Description</h1>
-      </Grid>
-      <Grid item xs={12}>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          impedit consequuntur molestiae esse omnis ratione, natus
-          exercitationem ad libero quae? Voluptatum eum eius ipsum cupiditate
-          doloribus vero repellendus totam sint.
-        </p>
-      </Grid>
-      <Grid item xs={12}>
-      <a href="https://herodex.netlify.app/" target="blank" title="herodex"> herodex </a>
-      </Grid>
+      
+        <>
+          <Grid
+            container
+            column
+            justify="center"
+            alignItems="space-between"
+          ></Grid>
+          <Grid item xs={12}>
+            <h1>Description</h1>
+          </Grid>
+          <Grid item xs={12}>
+            <p>{description.text}</p>
+          </Grid>
+          <Grid item xs={12}>
+            <a href={description.link} target="blank" title="herodex">
+              {description.alt}
+            </a>
+          </Grid>
+        </>
     </div>
   );
 };
