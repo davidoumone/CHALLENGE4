@@ -52,7 +52,7 @@ router.get('/:id', (req, res) => {
   });
 });
 
-// Afficher une image dans le carousel
+// Afficher une image dans le carousel herodex
 router.get('/search/:keyword', (req, res) => {
   const keyword = req.params.keyword;
   const sql = 'SELECT * FROM media WHERE keywords = ?';
