@@ -1,10 +1,11 @@
 .PageContainerContact {
   margin-top: 9vw;
   font-size: 1.5vw;
+  color: magenta;
 }
 
 .PageContainerform {
-  padding-bottom: 10vw;
+  padding-bottom: 5vw;
 }
 
 .PageContainerform2 {
@@ -12,5 +13,5 @@
 }
 
 .PageContainerform3 {
-  padding-bottom: 15vw;
+  padding-bottom: 20vw;
 }
