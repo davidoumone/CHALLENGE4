@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 
-const Description = ({ description }) => {
+const Description = ({ description, title }) => {
   console.log("desc: ", description)
   return (
     <div>
@@ -20,7 +20,7 @@ const Description = ({ description }) => {
             <p>{description.text}</p>
           </Grid>
           <Grid item xs={12}>
-            <a href={description.link} target="blank" title="herodex">
+            <a href={description.link} target="blank" title={title}>
               {description.alt}
             </a>
           </Grid>

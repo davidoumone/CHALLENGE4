@@ -4,13 +4,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const APP_URL = process.env.REACT_APP_API_BASE_URL;
 
-export default ({ media }) => (
+export default ({ media, folder }) => (
   <Carousel autoPlay>
     {media.map((item) => (
       <div>
         <img
           alt={item.alt}
-          src={`${APP_URL}/images/carouselReactHerodex/${item.file_name}`}
+          src={`${APP_URL}/images/${folder}/${item.file_name}`}
         />
         <p className="legend">{item.alt}</p>
       </div>
