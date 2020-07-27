@@ -11,7 +11,7 @@ const Navbar = () => {
 
       <Link to="/node">Node</Link>
 
-      <Link to="/contact">Contact</Link>
+      <Link to="/contact">Administrator</Link>
     </div>
   );
 };

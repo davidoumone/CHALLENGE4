@@ -1,4 +1,24 @@
-.PageContainerHome img{
-    width: 100%;
-    height: 25vw;
+.PageContainerHome {
+  background-image: url(../../images/background.jpeg);
+}
+
+.PageContainerHome img {
+  width: 100%;
+  height: 25em;
+}
+
+.PageContainerHome h1 {
+  color: green;
+  font-family: "Kaushan Script", cursive;
+  font-size: 66px;
+}
+
+.PageContainerHome h2 {
+  color: blue;
+  font-family: "Kaushan Script", cursive;
+  font-size: 3.5em;
+}
+
+.PageContainerHome p {
+  font-size: 1.3em;
 }

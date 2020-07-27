@@ -2,11 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Grid } from "@material-ui/core";
 import Carousel from "./Carousel";
 import Description from "./Description";
+import "./PageReact.css";
 
 const PageReact = () => {
   const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
   const [carousels, setCarousels] = useState([]);
   const [descriptions, setDescriptions] = useState(undefined);
+  const [carouselsaintigny, setCarouselsaintigny] = useState([]);
+  const [descriptionsaintigny, setDescriptionsaintigny] = useState(undefined);
 
   useEffect(() => {
     fetch(`${API_BASE_URL}/api/media/search/carouselherodex`)
@@ -18,6 +21,16 @@ const PageReact = () => {
           .then((res) => res.json())
           .then((desc) => {
             setDescriptions(desc);
+            fetch(`${API_BASE_URL}/api/media/search/carouselsaintigny`)
+          .then((res) => res.json())
+          .then((data) => {
+            setCarouselsaintigny(data);
+            fetch(`${API_BASE_URL}/api/description/4`)
+          .then((res) => res.json())
+          .then((desc) => {
+            setDescriptionsaintigny(desc);
+          })
+          })
           })
           .catch((error) => console.error(error.message));
       })
@@ -31,6 +44,7 @@ const PageReact = () => {
         direction="row"
         justify="space-evenly"
         alignItems="center"
+        className="PageContainerReact"
       >
         <Grid item xs={15}>
           <h1>React</h1>
@@ -102,37 +116,25 @@ const PageReact = () => {
         </Grid>
 
         <Grid item xs={5}>
-          {carousels.length > 0 && <Carousel media={carousels} />}
+          {carousels.length > 0 && <Carousel media={carousels} folder="carouselReactHerodex" />}
         </Grid>
 
         <Grid item xs={5}>
-          {descriptions && (
-            <Description description={descriptions} />
-          )}
-        </Grid>
-
-        <Grid item xs={12}>
-          <h2>Dé-pression</h2>
-        </Grid>
-
-        <Grid item xs={5}>
-          {/* <Carousel /> */}
-        </Grid>
-
-        <Grid item xs={5}>
-          {/* <Description /> */}
+          {descriptions && <Description description={descriptions} title="herodex" />}
         </Grid>
 
         <Grid item xs={12}>
           <h2>Mairie de Saintigny</h2>
         </Grid>
-
         <Grid item xs={5}>
-          {/* <Carousel /> */}
+          {carouselsaintigny.length > 0 && <Carousel media={carouselsaintigny} folder="carouselReactSaintigny" />}
         </Grid>
 
         <Grid item xs={5}>
-          {/* <Description /> */}
+          {descriptionsaintigny && <Description description={descriptionsaintigny} title="saintigny" />}
+        </Grid>
+        <Grid item xs={12}>
+          <h2>Dé-pression</h2>
         </Grid>
       </Grid>
     </div>
