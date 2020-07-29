@@ -1,5 +1,5 @@
 .PageContainerHome {
-  background-image: url(../../images/background.jpeg);
+  background-image: url(../../images/background.webp);
 }
 
 .PageContainerHome img {
@@ -8,17 +8,18 @@
 }
 
 .PageContainerHome h1 {
-  color: green;
+  color: brown;
   font-family: "Kaushan Script", cursive;
   font-size: 66px;
 }
 
 .PageContainerHome h2 {
-  color: blue;
+  color:brown;
   font-family: "Kaushan Script", cursive;
   font-size: 3.5em;
 }
 
 .PageContainerHome p {
   font-size: 1.3em;
+  color:rgb(0, 0, 0);
 }
