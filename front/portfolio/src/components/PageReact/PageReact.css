@@ -1,19 +1,20 @@
 .PageContainerReact {
-  background-image: url(../../images/background.jpeg);
+  background-image: url(../../images/background.webp);
 }
 
 .PageContainerReact h1 {
-  color: green;
+  color: brown;
   font-family: "Kaushan Script", cursive;
   font-size: 3.5em;
 }
 
 .PageContainerReact h2 {
-  color: blue;
+  color: brown;
   font-family: "Kaushan Script", cursive;
   font-size: 3.5em;
 }
 
 .PageContainerReact p {
   font-size: 1.3em;
+  color:rgb(0, 0, 0);
 }

@@ -1,0 +1,34 @@
+.footer {
+    background-color: #303036;
+    color: #d3d3d3;
+    height: 400px;
+    position: relative;
+}
+
+.footer .footer-content {
+    border: 1px solid green;
+    height: 350px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section {
+    flex: 1;
+    padding: 25px;
+    border: 1px solid white;
+}
+
+.footer .footer-content .footer-section .Contact {
+    line-height: 2.5em;
+}
+
+.footer .footer-bottom {
+    background-color: #343a40;
+    color: whitesmoke;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}

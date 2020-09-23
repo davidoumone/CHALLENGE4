@@ -1,10 +1,11 @@
 import React from "react";
+import avatar from "../../images/avatar.jpeg"
 import "./PageContact.css";
 
 const PageContact = () => {
   return (
     <div className="loginbox">
-      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.yVywVC6PkiDZlRHhE37OcwAAAA%26pid%3DApi&f=1" className="avatar" alt=""/>
+      <img src={avatar} className="avatar" alt=""/>
       <h1>Login Administrator</h1>
       <form>
         <p>E-mail adress</p>

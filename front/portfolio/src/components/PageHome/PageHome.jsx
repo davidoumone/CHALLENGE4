@@ -1,6 +1,8 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import gifboat from "../../images/gif.webp"
 import "./PageHome.css";
+import Footer from "../Footer";
 
 const PageHome = () => {
   return (
@@ -62,10 +64,11 @@ const PageHome = () => {
         <Grid item xs={12}>
           <img
             alt=""
-            src="https://media0.giphy.com/media/l0MYSryDg63YEmXVS/200w.webp?cid=ecf05e47tfsk0av9iaroh9f1pgmdcdlr62mblmmfauo5pz2e&rid=200w.webp"
+            src={gifboat}
           />
         </Grid>
       </Grid>
+      <Footer/>
     </div>
   );
 };

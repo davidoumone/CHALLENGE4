@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import "./PageNode.css";
+import Footer from "../Footer";
 
 const PageNode = () => {
   return (
@@ -72,6 +73,7 @@ const PageNode = () => {
           </p>
         </Grid>
       </Grid>
+      <Footer/>
     </div>
   );
 };

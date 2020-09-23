@@ -3,6 +3,7 @@ import { Grid } from "@material-ui/core";
 import Carousel from "./Carousel";
 import Description from "./Description";
 import "./PageReact.css";
+import Footer from "../Footer";
 
 const PageReact = () => {
   const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
@@ -134,9 +135,10 @@ const PageReact = () => {
           {descriptionsaintigny && <Description description={descriptionsaintigny} title="saintigny" />}
         </Grid>
         <Grid item xs={12}>
-          <h2>Dé-pression</h2>
+          <h2>Et je suis prêt pour de nouvelles aventures</h2>
         </Grid>
       </Grid>
+      <Footer/>
     </div>
   );
 };

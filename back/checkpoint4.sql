@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.30, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.31, for Linux (x86_64)
 --
 -- Host: localhost    Database: checkpoint4
 -- ------------------------------------------------------
--- Server version	5.7.30-0ubuntu0.18.04.1
+-- Server version	5.7.31-0ubuntu0.18.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -55,7 +55,7 @@ CREATE TABLE `description` (
   `date` datetime DEFAULT NULL,
   `alt` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -64,7 +64,7 @@ CREATE TABLE `description` (
 
 LOCK TABLES `description` WRITE;
 /*!40000 ALTER TABLE `description` DISABLE KEYS */;
-INSERT INTO `description` VALUES (1,'herodex','technologies utilisées:réact, réact-dom,react-burger-menu, react-router-dom, react-scripts, reacstrap, et material-ui/core, matérial-ui/lab. Equipe de travail Pierre et Lucas méthode SCRUM.','https://herodex.netlify.app/','2020-07-23 00:00:00','hérodex'),(2,NULL,NULL,NULL,NULL,'herodex');
+INSERT INTO `description` VALUES (1,'herodex','technologies utilisées:réact, réact-dom,react-burger-menu, react-router-dom, react-scripts, reacstrap, et material-ui/core, matérial-ui/lab. Equipe de travail David, Pierre et Lucas méthode SCRUM','https://herodex.netlify.app/','2020-07-23 00:00:00','hérodex'),(4,'saintigny','technologies utilisées: express, mysql, dotenv, nodemon, jsonwebtoken, cors, bcrypt, @hapi/joi, material-ui, react, axios, lightgallery.js.Equipe de travail: Anael, Guillaume, David, Pierre, méthode SCRUM','www.saintigny.com','2020-07-26 00:00:00','saintigny');
 /*!40000 ALTER TABLE `description` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -83,7 +83,7 @@ CREATE TABLE `media` (
   `keywords` varchar(300) DEFAULT NULL,
   `alt` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -92,7 +92,7 @@ CREATE TABLE `media` (
 
 LOCK TABLES `media` WRITE;
 /*!40000 ALTER TABLE `media` DISABLE KEYS */;
-INSERT INTO `media` VALUES (1,'photo1.png','2020-07-23 00:00:00','image','carouselherodex','herodex'),(2,'photo2.png','2020-07-23 00:00:00','image','carouselherodex','herodex'),(3,'photo3.png','2020-07-23 00:00:00','image','carouselherodex','herodex'),(4,'photo4.png','2020-07-23 00:00:00','image','carouselherodex','herodex'),(5,'photo5.png','2020-07-23 00:00:00','image','carouselherodex','herodex');
+INSERT INTO `media` VALUES (1,'photo1.png','2020-07-23 00:00:00','image','carouselherodex','herodex'),(2,'photo2.png','2020-07-23 00:00:00','image','carouselherodex','herodex'),(3,'photo3.png','2020-07-23 00:00:00','image','carouselherodex','herodex'),(4,'photo4.png','2020-07-23 00:00:00','image','carouselherodex','herodex'),(5,'photo5.png','2020-07-23 00:00:00','image','carouselherodex','herodex'),(6,'saintigny1.png','2020-07-26 00:00:00','image','carouselsaintigny','saintigny'),(7,'saintigny2.png','2020-07-26 00:00:00','image','carouselsaintigny','saintigny'),(8,'saintigny3.png','2020-07-26 00:00:00','image','carouselsaintigny','saintigny'),(9,'saintigny4.png','2020-07-26 00:00:00','image','carouselsaintigny','saintigny'),(10,'saintigny5.png','2020-07-26 00:00:00','image','carouselsaintigny','saintigny');
 /*!40000 ALTER TABLE `media` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -128,4 +128,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-07-23 17:45:43
+-- Dump completed on 2020-07-29 22:00:51
