@@ -1,0 +1,20 @@
+.PageContainerNode {
+  background-image: url(../../images/background.webp);
+}
+
+.PageContainerNode h1 {
+  color: brown;
+  font-family: "Kaushan Script", cursive;
+  font-size: 3.5em;
+}
+
+.PageContainerNode h2 {
+  color: brown;
+  font-family: "Kaushan Script", cursive;
+  font-size: 3.5em;
+}
+
+.PageContainerNode p {
+  font-size: 1.3em;
+  color:rgb(0, 0, 0);
+}
